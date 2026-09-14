@@ -144,7 +144,7 @@ button:hover {
 }
 
 button:active {
-    background-color: #063b47;
+    background-color: #063b46;
     transform: translateY(1px);
 }
 
