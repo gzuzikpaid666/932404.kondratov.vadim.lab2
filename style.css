@@ -124,7 +124,7 @@ input:focus,
 textarea:focus {
     outline: none;
     border: 3px solid transparent;
-    border-image: linear-gradient(90deg, #0055a4, #ffffff, #ef4135);
+    border-image: linear-gradient(90deg, #0319e4, #ffffff, #35d0ef);
     border-image-slice: 1;
 }
 
