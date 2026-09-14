@@ -80,7 +80,7 @@
         const switcher = document.getElementById('lang-switcher');
         const root = document.documentElement;
 
-        function switchToFrench() {
+        function switchToKazakh() {
             root.style.setProperty('--main-color', '#0055a4');
             root.style.setProperty('--accent-color', '#ef4135');
         }
@@ -90,9 +90,9 @@
             root.style.removeProperty('--accent-color');
         }
 
-        switcher.addEventListener('mouseenter', switchToFrench);
+        switcher.addEventListener('mouseenter', switchToKazakh);
         switcher.addEventListener('mouseleave', switchToDefault);
-        switcher.addEventListener('focus', switchToFrench);
+        switcher.addEventListener('focus', switchToKazakh);
         switcher.addEventListener('blur', switchToDefault);
     </script>
 
