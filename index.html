@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Языковой энтузиаст и переводчик</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+             gap: 6px;
+             padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Вадим Кондратов</h1>
+        <h2>Языковой энтузиаст и переводчик</h2>
+        <span id="lang-switcher" class="lang-switcher" tabindex="0"> Наведите, что бы сменить тему</span>
+        <span class="badge">Квалифицированный преподаватель казахского языка</span>
+    </header>
+
+    <main>
+
+        <section>
+            <h3>Навыки</h3>
+            <ul class="skills-list">
+                <li>Письменный и устный перевод</li>
+                <li>Изучение иностранных языков</li>
+                <li>Межкультурная коммуникация</li>
+                <li>Работа с CAT-инструментами</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Проекты</h3>
+            <ul>
+                <li>Перевод технической документации</li>
+                <li>Создание языкового подкаста</li>
+                <li>Разработка курса казахского для начинающих</li>
+                <li>Локализация мобильного приложения</li>
+            </ul>
+        </section>
+
+        <img class="avatar" src="c:\Users\Pepsik\Downloads\018fdedd-a3d3-7d64-b74f-620fcf0701b5.jpg" alt="Учебник Казахского Языка" width="250" height="250">
+
+
+        <section>
+            <h3>Форма обратной связи</h3>
+            <form action="#" method="post" style="display: flex; flex-direction: column;">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="username" placeholder="Введите ваше имя">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="useremail" placeholder="Введите ваш email">
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="usermessage" placeholder="Введите ваше сообщение" rows="5"></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <aside class="lang-aside">
+            <h3>Вадим Кондратов</h3>
+            <p>Сейчас я хочу научить студентов казахскому языку.</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Вадим Кондратов</p>
+    </footer>
+
+    <script>
+        const switcher = document.getElementById('lang-switcher');
+        const root = document.documentElement;
+
+        function switchToFrench() {
+            root.style.setProperty('--main-color', '#0055a4');
+            root.style.setProperty('--accent-color', '#ef4135');
+        }
+
+        function switchToDefault() {
+            root.style.removeProperty('--main-color');
+            root.style.removeProperty('--accent-color');
+        }
+
+        switcher.addEventListener('mouseenter', switchToFrench);
+        switcher.addEventListener('mouseleave', switchToDefault);
+        switcher.addEventListener('focus', switchToFrench);
+        switcher.addEventListener('blur', switchToDefault);
+    </script>
+
+</body>
+</html>
